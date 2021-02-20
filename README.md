@@ -58,3 +58,4 @@ void loop()
 
 
 ```
+Conclusion se supone que el puerto serial se ejecuta en una interrupcion pero el timer tambien es una interrupcion, creo no estoy seguro que el timer es una interrupcion independiente es decir que no es afectada por otra interrupcion
