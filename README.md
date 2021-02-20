@@ -3,7 +3,7 @@
 Prueba 1 cada un segundo prende y apaga un led usando el timer..
 Lo que sucede que cada 1 segundo ejecuta la interrupcion para realizar la acccion y aumentar el contador
 
-**recordatorio: Tener en cuenta que la palabra volatile es para cambiar el valor de una variable dentro de una interrupcion para usarla desde otro metodo***
+**recordatorio: Tener en cuenta que la palabra volatile es para cambiar el valor de una variable dentro de una interrupcion para usarla desde otro metodo**
 
 ```c++ 
 #include <TimerOne.h>
