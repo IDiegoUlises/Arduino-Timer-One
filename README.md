@@ -1,6 +1,7 @@
 # Arduino-Timer-One
 
-Prueba 1 cada un segundo prende y apaga un led usando el timer
+Prueba 1 cada un segundo prende y apaga un led usando el timer..
+Lo que sucede que cada 1 segundo ejecuta la interrupcion para realizar la acccion y aumentar el contador
 ```c++ 
 #include <TimerOne.h>
 const int led = 13;  // the pin with a LED
@@ -26,3 +27,5 @@ void loop()
 {
 }
 ```
+
+
