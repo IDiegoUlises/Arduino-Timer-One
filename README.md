@@ -6,7 +6,7 @@ Lo que sucede que cada 1 segundo ejecuta la interrupcion para realizar la acccio
 #include <TimerOne.h>
 const int led = 13;  // the pin with a LED
 int ledState = LOW;    // El LED empieza apagado
-volatile unsigned long blinkCount = 0; // La definimos como volatile
+volatile int blinkCount = 0; // La definimos como volatile
 
 void setup(void)
 {
@@ -33,7 +33,7 @@ void loop()
 #include <TimerOne.h>
 const int led = 13;  // the pin with a LED
 int ledState = LOW;    // El LED empieza apagado
-volatile unsigned long blinkCount = 0; // La definimos como volatile
+volatile int blinkCount = 0; // La definimos como volatile
 
 void setup(void)
 {
@@ -66,7 +66,7 @@ Conclusion se supone que el puerto serial se ejecuta en una interrupcion pero el
 #include <TimerOne.h>
 const int led = 13;  // the pin with a LED
 int ledState = LOW;    // El LED empieza apagado
-volatile unsigned long blinkCount = 0; // La definimos como volatile
+volatile int blinkCount = 0; // La definimos como volatile
 
 void setup(void)
 {
