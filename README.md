@@ -59,3 +59,39 @@ void loop()
 
 ```
 Conclusion se supone que el puerto serial se ejecuta en una interrupcion pero el timer tambien es una interrupcion, creo no estoy seguro que el timer es una interrupcion independiente es decir que no es afectada por otra interrupcion
+
+
+## Usando el timer y el puerto serial al mismo tiempo, esta programado para que en 10 segundos se prenda un led y a la misma vez imprime en el puerto serial el tiempo de ejecucion
+```C++
+#include <TimerOne.h>
+const int led = 13;  // the pin with a LED
+int ledState = LOW;    // El LED empieza apagado
+volatile unsigned long blinkCount = 0; // La definimos como volatile
+
+void setup(void)
+{
+  pinMode(led, OUTPUT);
+  Timer1.initialize(1000000);         // Dispara cada 1 segundo
+  Timer1.attachInterrupt(ISR_Blink); // Activa la interrupcion y la asocia a ISR_Blink
+  Serial.begin(9600);
+}
+
+void ISR_Blink()
+{
+
+  //ledState = !ledState ;
+  blinkCount++    ;     // Contador veces se enciende el LED
+
+  if (blinkCount == 10)
+  {
+    digitalWrite(13, HIGH);
+  }
+
+}
+
+void loop()
+{
+  Serial.println(blinkCount);
+}
+
+```
