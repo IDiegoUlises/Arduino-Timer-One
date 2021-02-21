@@ -6,7 +6,7 @@ Un timer genera una interrupcion para ejecutar funciones independiente al proces
 
 **Timer 1 Arduino:** Es de 16 bits usado por la libreria servo en arduino uno si no estas controlado servos puedes usar este timer 1 arduino libremente.
 
-**Timer 2 Arduino:** Es de 8 bits usado en la función tone() si no usas esta funcion puedes emplear el timer 2 arduino libremente para otra aplicación.
+**Timer 2 Arduino:** Es de 8 bits usado en la función ```tone()``` si no usas esta funcion puedes emplear el timer 2 arduino libremente para otra aplicación.
 
 **Timer 3, 4, 5 (Arduino Mega):** Solo disponible en el arduino mega son de de 16 bits mayormente utilizados principalmente para el control de servos sino utilizas servos puedes usarlos libremente.
 
