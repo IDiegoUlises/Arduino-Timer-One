@@ -12,13 +12,10 @@ Un timer genera una interrupcion para ejecutar funciones independiente al proces
 
 ```c++ 
 #include <TimerOne.h>
-int led = 13;
-int estado = LOW;
 volatile int tiempo = 0;
 
 void setup()
 {
-  pinMode(led, OUTPUT);
   Timer1.initialize(1000000); //En microsegundos
   Timer1.attachInterrupt(funcion);
   Serial.begin(9600);
@@ -26,10 +23,7 @@ void setup()
 
 void funcion()
 {
-
-  estado = !estado ;
   tiempo++;
-  digitalWrite(13, estado);
 }
 
 void loop()
