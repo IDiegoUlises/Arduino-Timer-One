@@ -11,7 +11,7 @@ const int led = 13;  // the pin with a LED
 int ledState = LOW;    // El LED empieza apagado
 volatile int blinkCount = 0; // La definimos como volatile
 
-void setup(void)
+void setup()
 {
   pinMode(led, OUTPUT);
   Timer1.initialize(1000000);         // Dispara cada 1 segundo tiempo en microsegundos
@@ -38,7 +38,7 @@ const int led = 13;  // the pin with a LED
 int ledState = LOW;    // El LED empieza apagado
 volatile int blinkCount = 0; // La definimos como volatile
 
-void setup(void)
+void setup()
 {
   pinMode(led, OUTPUT);
   Timer1.initialize(1000000);         // Dispara cada 1 segundo
@@ -71,7 +71,7 @@ const int led = 13;  // the pin with a LED
 int ledState = LOW;    // El LED empieza apagado
 volatile int blinkCount = 0; // La definimos como volatile
 
-void setup(void)
+void setup()
 {
   pinMode(led, OUTPUT);
   Timer1.initialize(1000000);         // Dispara cada 1 segundo
@@ -99,13 +99,13 @@ void loop()
 
 ```
 ### Cronometro cada vez que suceda 5 segundos se prendera el led y cuando pasen 5 segundos mas se apagara el led de manera infinita esto sirve para hacer un cronometro de tiempo
-```c+++
+```c++
 #include <TimerOne.h>
 const int led = 13;  // the pin with a LED
 volatile int ledState = LOW;    // El LED empieza apagado
 volatile int blinkCount = 0; // La definimos como volatile
 
-void setup(void)
+void setup()
 {
   pinMode(led, OUTPUT);
   Timer1.initialize(1000000);         // Dispara cada 1 segundo
