@@ -2,9 +2,9 @@
 
 Un timer genera una interrupcion para ejecutar funciones sin involocurar el procesador utilizando internamente el cristal de cuarzo de 16 Megahertz para funcionar y utilizar el tiempo
 
-**Timer 0 Arduino:** Es de 8bits. Usado para las funciones delay(), millis(), micros().
+**Timer 0 Arduino:** Es de 8 bits. Usado para las funciones delay(), millis(), micros() no utilzar este timer si utilizas las funciones de tiempo anteriores 
 
-**Timer 1 Arduino:** Es de 16 bits. Usado por la librería Servo en Arduino Uno (Timer5 para Arduino Mega). Se usa principalmente para el control de Servos, sin embargo, si no estas controlado servos, puedes usar este timer 1 arduino libremente.
+**Timer 1 Arduino:** Es de 16 bits ussado por la libreria servo en Arduino Uno se usa principalmente para el control de servos, sin embargo, si no estas controlado servos, puedes usar este timer 1 arduino libremente.
 
 **Timer 2 Arduino:** Es de 8 bits. Usado en la función tone(). Si no usas este módulo, puedes emplear el timer 2 Arduino libremente para temporizar otra aplicación.
 
