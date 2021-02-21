@@ -22,7 +22,7 @@ volatile int contador = 0;
 void setup()
 {
   pinMode(led, OUTPUT);
-  Timer1.initialize(1000000);
+  Timer1.initialize(1000000); //En microsegundos
   Timer1.attachInterrupt(funcion);
   Serial.begin(9600);
 }
