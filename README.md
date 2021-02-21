@@ -10,14 +10,11 @@ Un timer genera una interrupcion para ejecutar funciones independiente al proces
 
 **Timer 3, 4, 5 (Arduino Mega):** Solo disponible en el arduino mega son de de 16 bits mayormente utilizados principalmente para el control de servos sino utilizas servos puedes usarlos libremente.
 
-
-
-
 ```c++ 
 #include <TimerOne.h>
 int led = 13;
 int estado = LOW;
-volatile int contador = 0;
+volatile int tiempo = 0;
 
 void setup()
 {
@@ -31,12 +28,12 @@ void funcion()
 {
 
   estado = !estado ;
-  contador++;
+  tiempo++;
   digitalWrite(13, estado);
 }
 
 void loop()
 {
-  Serial.println(contador);
+  Serial.println(tiempo);
 }
 ```
