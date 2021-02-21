@@ -31,7 +31,7 @@ void loop()
   Serial.println(tiempo);
 }
 ```
-* Cada un segundo se ejecuta una interrupcion que incrementara el tiempo
+* Cada un segundo se ejecuta la interrupcion que incrementara el tiempo
 * Se define como volatile para modificar variables en una interrupcion
 * Se utiliza la interrupcion serial recordar que el timer es una interrupcion independiente ya que usa el cristal de cuarzo
 * Se pueden utilizar la funciones de tiempo ```delay()```,```millis()```,```micros()``` sin afectar el tiempo
