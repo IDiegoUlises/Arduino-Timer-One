@@ -98,3 +98,37 @@ void loop()
 }
 
 ```
+### Cronometro cada vez que suceda 5 segundos se prendera el led y cuando pasen 5 segundos mas se apagara el led de manera infinita esto sirve para hacer un cronometro de tiempo
+```c+++
+#include <TimerOne.h>
+const int led = 13;  // the pin with a LED
+volatile int ledState = LOW;    // El LED empieza apagado
+volatile int blinkCount = 0; // La definimos como volatile
+
+void setup(void)
+{
+  pinMode(led, OUTPUT);
+  Timer1.initialize(1000000);         // Dispara cada 1 segundo
+  Timer1.attachInterrupt(ISR_Blink); // Activa la interrupcion y la asocia a ISR_Blink
+  Serial.begin(9600);
+}
+
+void ISR_Blink()
+{
+
+  ledState = !ledState ;
+  blinkCount++    ;     // Contador veces se enciende el LED
+
+  if (blinkCount == 5)
+  {
+    digitalWrite(led, ledState);
+    blinkCount = 0;
+  }
+
+}
+
+void loop()
+{
+  Serial.println(blinkCount);
+}
+```
