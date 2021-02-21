@@ -1,6 +1,6 @@
 # Arduino Timer One
 
-Un timer genera una interrupcion para ejecutar funciones sin involocurar el procesador utilizando internamente el cristal de cuarzo de 16 Megahertz para funcionar y utilizar el tiempo
+Un timer genera una interrupcion para ejecutar funciones independiente al procesador utilizando internamente el cristal de cuarzo de 16 Megahertz para funcionar y utilizar el tiempo
 
 **Timer 0 Arduino:** Es de 8 bits usado para las funciones delay(), millis(), micros() no utilzar este timer si utilizas las funciones de tiempo anteriores 
 
