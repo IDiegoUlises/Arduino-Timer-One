@@ -31,3 +31,5 @@ void loop()
   Serial.println(tiempo);
 }
 ```
+* Cada un segundo se ejecuta una interrupcion que incrementara el tiempo
+* Se define como volatile para modificar variables en una interrupcion
