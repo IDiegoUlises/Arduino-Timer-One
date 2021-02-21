@@ -33,4 +33,5 @@ void loop()
 ```
 * Cada un segundo se ejecuta una interrupcion que incrementara el tiempo
 * Se define como volatile para modificar variables en una interrupcion
-* Se utiliza la interrupcion Serial recordar que el timer es una interrupcion indepente ya que usa el cristal de cuarzo
+* Se utiliza la interrupcion Serial recordar que el timer es una interrupcion independiente ya que usa el cristal de cuarzo
+* Se pueden utilizar la funciones de tiempo delay() sin afectar el tiempo
